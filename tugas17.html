@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dunia Musik</title>
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    .genre-icon {
+      font-size: 4rem;
+      color: #0d6efd;
+    }
+    .hero {
+      background: linear-gradient(135deg, #6f42c1, #0d6efd);
+      color: white;
+      padding: 100px 0;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      transition: 0.3s;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">🎶 Dunia Musik</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#genre">Genre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero text-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Selamat Datang di Dunia Musik</h1>
+      <p class="lead mt-3">Nikmati berbagai genre musik, ritme, dan harmoni yang menggugah semangatmu.</p>
+      <a href="#genre" class="btn btn-light btn-lg mt-4">Jelajahi Genre Musik</a>
+    </div>
+  </section>
+
+  <!-- Genre Section -->
+  <section id="genre" class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">Genre Musik Populer</h2>
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="card text-center shadow-sm p-4">
+            <i class="bi bi-lightning-charge-fill genre-icon mb-3"></i>
+            <h5 class="fw-bold">Rock</h5>
+            <p class="text-muted">Genre dengan energi tinggi, penuh semangat, dan suara gitar yang khas.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card text-center shadow-sm p-4">
+            <i class="bi bi-music-note-beamed genre-icon mb-3"></i>
+            <h5 class="fw-bold">Pop</h5>
+            <p class="text-muted">Musik dengan melodi yang mudah diingat dan disukai banyak orang.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card text-center shadow-sm p-4">
+            <i class="bi bi-vinyl-fill genre-icon mb-3"></i>
+            <h5 class="fw-bold">Jazz</h5>
+            <p class="text-muted">Penuh improvisasi dan harmoni yang menenangkan jiwa.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card text-center shadow-sm p-4">
+            <i class="bi bi-headphones genre-icon mb-3"></i>
+            <h5 class="fw-bold">Hip-Hop</h5>
+            <p class="text-muted">Gaya musik penuh ritme, lirik kuat, dan ekspresi kebebasan.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card text-center shadow-sm p-4">
+            <i class="bi bi-disc-fill genre-icon mb-3"></i>
+            <h5 class="fw-bold">EDM</h5>
+            <p class="text-muted">Musik elektronik yang membawa suasana pesta dan euforia.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card text-center shadow-sm p-4">
+            <i class="bi bi-heart-fill genre-icon mb-3"></i>
+            <h5 class="fw-bold">Balada</h5>
+            <p class="text-muted">Lagu penuh emosi dan makna yang menyentuh hati.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="bg-dark text-light py-5 text-center">
+    <div class="container">
+      <h2 class="fw-bold mb-3">Tentang Situs Ini</h2>
+      <p class="mb-4">Situs ini dibuat untuk para pecinta musik dari berbagai kalangan. 
+      Menggunakan Bootstrap 5 agar tampilannya modern, bersih, dan mudah digunakan.</p>
+      <a href="#home" class="btn btn-outline-light">Kembali ke Atas</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-secondary text-center text-white py-3">
+    <p class="mb-0">© 2025 Dunia Musik | Dibuat dengan 🎧 menggunakan Bootstrap 5</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
