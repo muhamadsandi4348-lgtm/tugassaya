@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ShopKuy - Toko Online Modern</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Poppins', sans-serif; background-color: #f8f9fa; }
+        .navbar-brand { font-weight: 700; font-size: 1.8rem; }
+        .product-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        .product-img {
+            height: 250px;
+            object-fit: cover;
+        }
+        .badge-sale {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: #e74c3c;
+            color: white;
+        }
+        .price-old {
+            text-decoration: line-through;
+            color: #95a5a6;
+        }
+        footer {
+            background: #2c3e50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+    <div class="container">
+        <a class="navbar-brand" href="#">ShopKuy</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-center">
+                <li class="nav-item"><a class="nav-link" href="#">Beranda</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Produk</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Kategori</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Tentang</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Kontak</a></li>
+                <li class="nav-item ms-3">
+                    <a class="btn btn-outline-light position-relative" href="#">
+                        <i class="bi bi-cart3"></i> Keranjang
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            3
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="bg-primary text-white py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h1 class="display-4 fw-bold">Selamat Datang di ShopKuy!</h1>
+                <p class="lead">Belanja mudah, cepat, dan aman. Diskon hingga 50% untuk produk terpilih.</p>
+                <a href="#produk" class="btn btn-light btn-lg">Belanja Sekarang</a>
+            </div>
+            <div class="col-lg-6 text-center">
+                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600" 
+                     alt="Hero" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Produk Terbaru -->
+<section id="produk" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5 fw-bold">Produk Terbaru</h2>
+        <div class="row g-4">
+
+            <!-- Produk 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card product-card h-100">
+                    <span class="badge badge-sale">Sale 30%</span>
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500" class="card-img-top product-img" alt="Headphone">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Headphone Wireless Pro</h5>
+                        <p class="text-muted">Kualitas suara jernih + noise cancelling</p>
+                        <div class="mt-auto">
+                            <p class="mb-2">
+                                <span class="h5 text-danger fw-bold">Rp 899.000</span>
+                                <span class="price-old ms-2">Rp 1.299.000</span>
+                            </p>
+                            <a href="#" class="btn btn-primary w-100">
+                                <i class="bi bi-cart-plus"></i> Tambah ke Keranjang
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produk 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card product-card h-100">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500" class="card-img-top product-img" alt="Jam Tangan">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Smartwatch X200</h5>
+                        <p class="text-muted">Monitor detak jantung & olahraga</p>
+                        <div class="mt-auto">
+                            <p class="h5 fw-bold">Rp 1.450.000</p>
+                            <a href="#" class="btn btn-primary w-100">
+                                <i class="bi bi-cart-plus"></i> Tambah ke Keranjang
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produk 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card product-card h-100">
+                    <span class="badge badge-sale">Hot!</span>
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500" class="card-img-top product-img" alt="Sepatu">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Sneakers Running Ultra</h5>
+                        <p class="text-muted">Ringan dan nyaman untuk olahraga</p>
+                        <div class="mt-auto">
+                            <p class="mb-2">
+                                <span class="h5 text-danger fw-bold">Rp 679.000</span>
+                                <span class="price-old ms-2">Rp 899.000</span>
+                            </p>
+                            <a href="#" class="btn btn-primary w-100">
+                                <i class="bi bi-cart-plus"></i> Tambah ke Keranjang
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tambah produk lain sesuai kebutuhan -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card product-card h-100">
+                    <img src="https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?w=500" class="card-img-top product-img" alt="Laptop">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Laptop Gaming RTX</h5>
+                        <p class="text-muted">Intel i7 + RTX 4060 16GB RAM</p>
+                        <div class="mt-auto">
+                            <p class="h5 fw-bold">Rp 18.999.000</p>
+                            <a href="#" class="btn btn-primary w-100">
+                                <i class="bi bi-cart-plus"></i> Tambah ke Keranjang
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <h5 class="fw-bold">ShopKuy</h5>
+                <p>Toko online terpercaya dengan ribuan produk berkualitas dan pengiriman cepat ke seluruh Indonesia.</p>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <h5>Link Cepat</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white text-decoration-none">Tentang Kami</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Syarat & Ketentuan</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Kebijakan Privasi</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Hubungi Kami</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <h5>Ikuti Kami</h5>
+                <a href="#" class="text-white me-3"><i class="bi bi-instagram fs-3"></i></a>
+                <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-3"></i></a>
+                <a href="#" class="text-white me-3"><i class="bi bi-twitter fs-3"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-youtube fs-3"></i></a>
+            </div>
+        </div>
+        <hr>
+        <div class="text-center">
+            <p>&copy; 2025 ShopKuy. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
