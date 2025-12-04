@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Berita Simple - Semua Berita di Satu Halaman</title>
+    
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <style>
+        body { background: #f4f4f4; font-family: Arial, sans-serif; }
+        .judul-utama { background: #0d6efd; color: white; padding: 2rem 0; }
+        .kategori { background: #198754; color: white; }
+        .card-berita { border: none; background: white; margin-bottom: 1.5rem; }
+        .card-berita:hover { box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="judul-utama text-center">
+    <h1 class="display-4 fw-bold">BERITA SIMPLE</h1>
+    <p class="lead">Semua berita terkini tanpa gambar – cepat & ringan</p>
+</div>
+
+<div class="container my-5">
+
+    <!-- Tombol Kategori -->
+    <div class="text-center mb-5">
+        <a href="#" class="btn btn-danger btn-lg mx-2">BREAKING</a>
+        <a href="#" class="btn btn-primary mx-2">Nasional</a>
+        <a href="#" class="btn btn-success mx-2">Politik</a>
+        <a href="#" class="btn btn-warning mx-2">Ekonomi</a>
+        <a href="#" class="btn btn-info mx-2">Olahraga</a>
+        <a href="#" class="btn btn-dark mx-2">Tekno</a>
+    </div>
+
+    <!-- Daftar Berita (langsung semua di sini) -->
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+
+            <!-- Berita 1 -->
+            <div class="card card-berita p-4 rounded-3 shadow-sm">
+                <span class="badge bg-danger mb-2">BREAKING</span>
+                <h3>Pemerintah Resmi Umumkan Ibu Kota Baru Pindah ke IKN Tahun 2026</h3>
+                <small class="text-muted"><i class="bi bi-clock"></i> 10 menit lalu</small>
+                <p class="mt-3">
+                    Presiden mengumumkan bahwa pemindahan ibu kota negara dari Jakarta ke Nusantara (IKN) akan dimulai secara resmi pada tahun 2026 mendatang...
+                </p>
+                <a href="#" class="btn btn-outline-primary">Baca selengkapnya →</a>
+            </div>
+
+            <!-- Berita 2 -->
+            <div class="card card-berita p-4 rounded-3 shadow-sm">
+                <span class="badge bg-primary mb-2">NASIONAL</span>
+                <h3>Rupiah Menguat Tajam ke Rp14.750 per Dolar AS</h3>
+                <small class="text-muted"><i class="bi bi-clock"></i> 1 jam lalu</small>
+                <p class="mt-3">
+                    Nilai tukar rupiah kembali menguat signifikan setelah Bank Indonesia menaikkan suku bunga acuan...
+                </p>
+                <a href="#" class="btn btn-outline-primary">Baca selengkapnya →</a>
+            </div>
+
+            <!-- Berita 3 -->
+            <div class="card card-berita p-4 rounded-3 shadow-sm">
+                <span class="badge bg-success mb-2">POLITIK</span>
+                <h3>DPR Sahkan Revisi UU Pemilu: Pilkada Serentak 2027</h3>
+                <small class="text-muted"><i class="bi bi-clock"></i> 2 jam lalu</small>
+                <p class="mt-3">
+                    DPR RI akhirnya menyetujui revisi UU Pemilu yang mengatur pelaksanaan pilkada serentak pada tahun 2027...
+                </p>
+                <a href="#" class="btn btn-outline-primary">Baca selengkapnya →</a>
+            </div>
+
+            <!-- Berita 4 -->
+            <div class="card card-berita p-4 rounded-3 shadow-sm">
+                <span class="badge bg-warning mb-2">OLAHRAGA</span>
+                <h3>Timnas Indonesia Lolos ke Final Piala AFF 2025!</h3>
+                <small class="text-muted"><i class="bi bi-clock"></i> 3 jam lalu</small>
+                <p class="mt-3">
+                    Gol dramatis di menit akhir membawa Timnas Indonesia mengalahkan Vietnam 2-1 di semifinal...
+                </p>
+                <a href="#" class="btn btn-outline-primary">Baca selengkapnya →</a>
+            </div>
+
+            <!-- Berita 5 -->
+            <div class="card card-berita p-4 rounded-3 shadow-sm">
+                <span class="badge bg-info mb-2">TEKNOLOGI</span>
+                <h3>Internet Starlink Resmi Hadir di Seluruh Desa Indonesia</h3>
+                <small class="text-muted"><i class="bi bi-clock"></i> 5 jam lalu</small>
+                <p class="mt-3">
+                    Elon Musk mengumumkan bahwa layanan internet satelit Starlink kini sudah menjangkau 100% wilayah Indonesia...
+                </p>
+                <a href="#" class="btn btn-outline-primary">Baca selengkapnya →</a>
+            </div>
+
+            <!-- Tambah berita sebanyak yang kamu mau di sini -->
+            <!-- Copy-paste blok card-berita di atas saja -->
+
+        </div>
+    </div>
+
+    <!-- Tombol Muat Lebih Banyak (opsional) -->
+    <div class="text-center mt-5">
+        <button class="btn btn-outline-secondary btn-lg px-5">Muat Berita Lainnya</button>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4 mt-5">
+    <p>&copy; 2025 Berita Simple – Dibuat dengan Bootstrap 5</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
